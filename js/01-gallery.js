@@ -23,10 +23,10 @@ galleryEl.addEventListener("click", (event) => {
     `<img src="${event.target.dataset.source}">`
   );
   box.show();
-});
 
-window.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    window.close();
-  }
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      box.close();
+    }
+  });
 });
